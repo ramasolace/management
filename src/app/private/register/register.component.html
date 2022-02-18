@@ -1,0 +1,40 @@
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+    <mat-card class="box">
+      <mat-card-header>
+        <mat-card-title>Register</mat-card-title>
+      </mat-card-header>
+      <form class="example-form" [formGroup]="registerForm">
+        <mat-card-content>
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="First Name" formControlName="firstName">
+            <mat-error  >Please enter first name</mat-error>
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Last Name" formControlName="lastName">
+            <mat-error  >Please enter last name</mat-error>
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Email" formControlName="email">
+            <mat-error  >Please enter valid email</mat-error>
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Password" formControlName="password">
+            <mat-error  >Please enter valid password</mat-error>
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Address" formControlName="address">
+            <mat-error  >Please enter address</mat-error>
+          </mat-form-field>
+          <mat-form-field class="example-full-width"  >
+            <mat-label>Birth Date</mat-label>
+            <input matInput [matDatepicker]="picker2" [max]="todayDate" formControlName="birthDate">
+            <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+            <mat-datepicker #picker2 color="primary"></mat-datepicker>
+            <mat-error  >Please select date</mat-error>
+          </mat-form-field>
+        </mat-card-content>
+        <button mat-stroked-button color="accent" class="btn-block" [disabled]="!registerForm.valid" (click)="submit()">Register</button>
+        <a mat-stroked-button  class="btn-block" routerLink="/login" >Back to Log in</a>
+      </form>
+    </mat-card>
+  </div>

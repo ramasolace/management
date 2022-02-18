@@ -1,0 +1,22 @@
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+    <mat-card class="box">
+      <mat-card-header>
+        <mat-card-title>Log in</mat-card-title>
+      </mat-card-header>
+      <form class="example-form" [formGroup]="loginForm">
+        <mat-card-content>
+          <mat-icon matTooltip="enter your register email.">info</mat-icon>
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Username" formControlName="userName">
+            <mat-error  >Please enter valid email</mat-error>
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Password" formControlName="password">
+            <mat-error  >Please enter valid password</mat-error>
+          </mat-form-field>
+        </mat-card-content>
+        <button mat-stroked-button color="accent" class="btn-block" (click)="submit()" [disabled]="!loginForm.valid">Log in</button>
+        <a mat-stroked-button  class="btn-block" routerLink="/register" >Register</a>
+      </form>
+    </mat-card>
+  </div>

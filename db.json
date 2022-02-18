@@ -1,0 +1,35 @@
+{
+  "posts": [
+    {
+      "firstName": "Rama",
+      "lastName": "gawas",
+      "mobile": "9876564325",
+      "city": "punr",
+      "address": "pune",
+      "birthDate": "2022-02-16T18:30:00.000Z",
+      "id": 1
+    }
+  ],
+  "manager": [
+    {
+      "firstName": "rama@gmail.com",
+      "lastName": "rama@gmail.com",
+      "email": "rama@gmail.com",
+      "password": "12345",
+      "address": "rama@gmail.com",
+      "birthDate": "2022-02-24T18:30:00.000Z",
+      "auth": true,
+      "id": 1
+    },
+    {
+      "firstName": "saheb",
+      "lastName": "reddy",
+      "email": "reddy@gmail.com",
+      "password": "reddy123",
+      "address": "pune",
+      "birthDate": "2022-02-18T18:30:00.000Z",
+      "auth": true,
+      "id": 2
+    }
+  ]
+}

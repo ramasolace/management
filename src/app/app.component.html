@@ -1,0 +1,17 @@
+
+<mat-sidenav-container fullscreen>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary" *ngIf="logIn">
+        <button mat-icon-button >
+        <mat-icon>menu</mat-icon>
+      </button>
+     Employee List
+      <span class="toolbar-spacer"></span>
+      <button mat-raised-button matTooltip="Log Out" color="accent" (click)="logOut()">Log Out</button>
+    </mat-toolbar>
+    <div class="main-content">
+      <router-outlet></router-outlet>
+    </div>
+   
+  </mat-sidenav-content>
+</mat-sidenav-container>
