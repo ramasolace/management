@@ -1,5 +1,6 @@
 # Project
-
+use to run json server command is: "npm run json:server"
+json server load on localhost:3000
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.3.
 
 ## Development server
